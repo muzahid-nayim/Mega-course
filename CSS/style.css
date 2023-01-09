@@ -2,13 +2,24 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        list-style: none;
     }
 
     :root{
         --color: rgb(56, 56, 56);
     }
 
-
+ul{
+    padding: 0;
+    margin: 0;
+}
+    a{
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+    }
+    a:hover{
+        color: rgb(86, 247, 86);
+    }
 /* ================================
 ==          HEADER START           ==
 ================================ */
@@ -250,19 +261,68 @@
 ================================ */
 
 
-.faq-section{
-    background: rgb(235,255,240);
-background: linear-gradient(135deg, rgba(235,255,240,1) 1%, rgb(191, 215, 189) 34%, rgb(210, 241, 159) 93%, rgb(235, 255, 165) 100%);
-}
+    .faq-section{
+        background: rgb(235,255,240);
+        background: linear-gradient(135deg, rgba(235,255,240,1) 1%, rgb(191, 215, 189) 34%, rgb(210, 241, 159) 93%, rgb(235, 255, 165) 100%);
+    }
 /* ================================
 ==       FAQ SECTION  END        ==
 ================================ */
 /* ================================
 ==    REGISTER SECTION START     ==
 ================================ */
-.register-section{
-    background-color: #1FB897;
-}
+    .register-section{
+        padding: 45px;
+        background: linear-gradient(to right,#1AB79D,#27B98B);
+    }
 /* ================================
 ==     REGISTER SECTION END      ==
+================================ */
+/* ================================
+==     LATEST SECTION START      ==
+================================ */
+    .fa-calendar-days,.fa-comments{
+        color: #1BB79D;
+    }
+    .p-card{
+        box-shadow: 0 0 20px rgb(240, 240, 240);
+        border-radius: 7px;
+    }
+/* ================================
+==     LATEST SECTION END        ==
+================================ */
+/* ================================
+==  FOOTER SECTION STAR START    ==
+================================ */
+    footer{
+        background: linear-gradient(to bottom ,#F1F4F4,#F1F4F4 );
+    }
+    .footer-ul li{
+        line-height: 30px;
+    }
+    .email{
+        border-radius: 5px ;
+        border: none;
+    }
+    .fa-facebook{
+        color: #1877F2 ;
+    }
+    .fa-linkedin{
+        color: #296BC2 ;
+    }
+    .fa-instagram{
+        color: #C331A6 ;
+    }
+    .fa-twitter{
+        color: #1DA0F3 ;
+    }
+    .fa-youtube{
+        color: #CC211F ;
+    }
+
+    .copyright{
+        background-color: #EAEEF0;
+    }
+/* ================================
+==     FOOTER SECTION STAR END   ==
 ================================ */

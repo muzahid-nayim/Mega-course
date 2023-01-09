@@ -20,11 +20,17 @@
     .header-content{
         padding-top: 8rem;
     }
-    .testimonials-title{
+    .testimonials-title h1{
         font-size: 40px;
     }
     .tst{
         display: block;
+    }
+    .register{
+        font-size: 40px;
+    }
+    .register-section{
+        padding: 80px 0 ;
     }
 
 }
