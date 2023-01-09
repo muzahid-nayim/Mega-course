@@ -252,7 +252,7 @@
 
 .faq-section{
     background: rgb(235,255,240);
-background: linear-gradient(135deg, rgba(235,255,240,1) 1%, rgba(199,252,195,1) 34%, rgba(239,255,214,1) 93%, rgba(219,236,222,1) 100%);
+background: linear-gradient(135deg, rgba(235,255,240,1) 1%, rgb(191, 215, 189) 34%, rgb(210, 241, 159) 93%, rgb(235, 255, 165) 100%);
 }
 /* ================================
 ==       FAQ SECTION  END        ==
