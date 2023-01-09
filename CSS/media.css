@@ -1,0 +1,55 @@
+
+
+/* ==      MED         == */
+@media screen and (min-width: 786px) {
+    .header-content{
+        padding-top: 5rem;
+    }
+}
+
+
+
+
+
+
+/* ==      LG         == */
+@media screen and (min-width: 992px) {
+    .navbar-nav li{
+        padding: 10px 20px;
+    }
+    .header-content{
+        padding-top: 8rem;
+    }
+    .testimonials-title{
+        font-size: 40px;
+    }
+    .tst{
+        display: block;
+    }
+
+}
+
+
+
+
+
+/* ==      XL         == */
+@media screen and (min-width: 1200px) {
+    .middle-card{
+        margin-left: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 479px) {
+.testimonial-area-11 .testimonial-slide .content{
+    padding: 40px 20px;
+ }
+}
+
+@media only screen and (max-width: 991px){
+    .testimonial-area-11 .testimonial-slide .content{
+        width: 100%;
+    }
+
+}

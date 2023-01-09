@@ -1,0 +1,259 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --color: rgb(56, 56, 56);
+    }
+
+
+/* ================================
+==          HEADER START           ==
+================================ */
+
+    nav{
+        width: 100%;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    .navbar-collapse{
+        margin-left: auto;
+        /* border: solid; */
+        width: auto;
+        display: flex;
+        /* justify-content: flex-end; */
+    }
+    a{
+        color: var(--color);
+    }
+    .nav-short a i{
+        font-size: 20px;
+    }
+
+    .try-btn{
+        background-color: #1ab69d;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+
+    .dropdown-menu{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+        /* background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+        background-blend-mode: screen, color-dodge, color-dodge, normal; */
+        background: radial-gradient(80.99% 100% at 50% 0%, #c9ffcb 0%, #36008E 100%), radial-gradient(50% 123.47% at 50% 50%, #EFE7C8 0%, #36008E 100%), linear-gradient(301.28deg, #f8c4da 0%, #48DD9E 100%), linear-gradient(294.84deg, #5A60E4 0%, #D30000 100%), linear-gradient(52.29deg, #000000 0%, #00FF85 100%), radial-gradient(100% 138.69% at 100% 0%, #0007A5 0%, #9bf8f5 100%), radial-gradient(70.41% 100% at 50% 0%, #00d519 0%, #2200AA 100%);
+        background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal;
+        padding-bottom: 100px;
+    }
+
+    .header-image{
+        border-radius: 13px;
+        background: #e0e0e0;
+        box-shadow:  5px 5px 10px #dcdada,
+                    -5px -5px 10px #dcdada;
+                    overflow: hidden;
+    }
+    /* ================================
+    ==          HEADER END           ==
+    ================================ */
+    /* ================================
+    ==       COUNTER AND ABOUT START ==
+    ================================ */
+    /* =========COUNTER START================ */
+    .counter-about{
+        background: rgb(243,251,255);
+        background: linear-gradient(135deg, rgba(243,251,255,1) 1%, rgba(231,248,255,1) 34%, rgba(255,245,234,1) 70%, rgba(255,255,255,1) 100%);
+    }
+    .enroll{
+        color: #1ab69d;
+    }
+    .complite{
+        color: #ee4a62;
+    } 
+    .rate{
+        color: #8e56ff;
+    }
+    .ins{
+        color: #f8941f;
+    }
+    /* =========ABOUT-ADS START================ */
+    .about-ads{
+        margin-top: 100px;
+    }
+    .fa-check{
+        color: #f8b81f;
+        font-size: 20px;
+    }
+    .green-btn{
+        background-color: #1ab69d;
+    }
+    /* ================================
+    ==       COUNTER AND ABOUT END ==
+    ================================ */
+    /* ================================
+    ==       POPULAR COURSE START ==
+    ================================ */
+    .price{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        background-color: #1ab69d;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 80px;
+        width: 80px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .course-data{
+        left: 0;
+        bottom: 10px;
+    }
+
+    .course-data li{
+        border-radius: 20px;
+    }
+    .p-card{
+        overflow: hidden;
+    }
+    .pcard-img{
+        transition: all .3s;
+    }
+
+    .p-card:hover .pcard-img{
+        transform: scale(1.1);
+    }
+    .img-container{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    /* ================================
+    ==       POPULAR COURSE END ==
+    ================================ */
+    /* ================================
+    ==     PARTNER SECTION START     ==
+    ================================ */
+    .our-partnar{
+        background: rgb(200, 213, 217);
+        background: linear-gradient(135deg, rgb(184, 194, 197) 1%, rgba(150,158,131,1) 34%, rgba(139,154,152,1) 68%, rgba(145,207,156,1) 100%);
+    }
+
+    .partner-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .brand:nth-child(5n),.brand:first-child{
+        border-left: solid 1px white;
+    }
+    .brand{
+    border-right: 1px solid white;
+    }
+    .brand:nth-child(5n),.brand:nth-child(6n),.brand:nth-child(7n),.brand:nth-child(8n){
+        border-top: 1px solid white;
+    }
+    .brand{
+        transition: all .3s ease-out;
+    }
+    .brand:hover{
+        background-color: white;
+    }
+    .partner-content{
+        box-sizing: border-box;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+/* ================================
+==     PARTNER SECTION END     ==
+================================ */
+/* ================================
+==     TESTIMONIAL  START        ==
+================================ */
+ .testimonials{
+    background-color: rgb(246, 246, 246);
+  }
+ .testimonials-slide-area{
+    position: relative;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+ }
+ .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .testimonial-slide{
+    border-radius: 7px;
+    box-shadow: 0 0  10px rgb(229, 229, 229);
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 93px;
+    background-color: white;
+  }
+
+  .thumb{
+    margin-right: 0;
+    margin-top: -110px;
+    margin-bottom: 35px;
+    width: 100px;
+  }
+  .fa-star{
+    color: gold;
+    font-size: 15px;
+  }
+  .info h5{
+    font-size: 18px;
+  }
+  .content p{
+    color: rgb(26, 26, 26);
+  }
+  .tst{
+    display: none;
+  }
+/* ================================
+==      TESTIMONIAL  END         ==
+================================ */
+/* ================================
+==     FAQ SECTION  START        ==
+================================ */
+
+
+.faq-section{
+    background: rgb(235,255,240);
+background: linear-gradient(135deg, rgba(235,255,240,1) 1%, rgba(199,252,195,1) 34%, rgba(239,255,214,1) 93%, rgba(219,236,222,1) 100%);
+}
+/* ================================
+==       FAQ SECTION  END        ==
+================================ */
