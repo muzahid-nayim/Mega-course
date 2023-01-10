@@ -38,6 +38,11 @@ window.addEventListener('scroll', function() {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    reverseDirection: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
