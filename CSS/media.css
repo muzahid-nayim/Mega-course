@@ -3,7 +3,10 @@
 /* ==      MED         == */
 @media screen and (min-width: 786px) {
     .header-content{
-        padding-top: 5rem;
+        /* padding-top: 1rem; */
+    }
+    .header-text{
+        /* margin-top: 2.5rem; */
     }
 }
 
@@ -18,7 +21,7 @@
         padding: 10px 20px;
     }
     .header-content{
-        padding-top: 8rem;
+        padding-top: 1rem;
     }
     .testimonials-title h1{
         font-size: 40px;
@@ -32,6 +35,9 @@
     .register-section{
         padding: 80px 0 ;
     }
+    .header-text{
+        margin-top: 4rem;
+    }
     
 
 }
@@ -42,12 +48,7 @@
 
 /* ==      XL         == */
 @media screen and (min-width: 1200px) {
-    .middle-card{
-        margin-left: 80px;
-    }
-    .shape{
-        display: initial;
-    }
+   
 }
 
 
