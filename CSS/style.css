@@ -119,13 +119,13 @@
         margin: 0 auto;
         background-color: #111927;
         background: rgb(183,198,187);
-background: linear-gradient(135deg, rgba(183,198,187,1) 1%, rgb(186, 238, 182) 34%, rgba(138,156,112,1) 93%, rgba(174, 234, 166, 0.816) 80%);
+background: linear-gradient(135deg, rgba(183,198,187,1) 1%, rgb(244, 252, 179) 34%, rgb(243, 195, 252) 93%, rgba(96,167,203,1) 100%);
     }
 
     .ads-card-container {
         backdrop-filter: blur(17px) saturate(200%);
         -webkit-backdrop-filter: blur(17px) saturate(200%);
-        background-color: rgba(18, 51, 113, 0.364);
+        background-color: rgba(18, 113, 72, 0.52);
         border-radius: 5px;
         margin: 0 auto;
     }
