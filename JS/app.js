@@ -41,7 +41,7 @@ var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
-    reverseDirection: false,
+    reverseDirection: false
   },
   pagination: {
     el: ".swiper-pagination",
