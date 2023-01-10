@@ -7,6 +7,7 @@
 
     :root{
         --color: rgb(56, 56, 56);
+        --btn-color:rgb(37, 37, 37);
     }
 
     ul{
@@ -18,7 +19,14 @@
         transition: all .2s ease-in-out;
     }
     a:hover{
-        color: rgb(86, 247, 86);
+        color: rgb(0, 210, 0);
+    }
+    .btn:hover{
+        background-color: rgb(1, 210, 109);
+        color: black;
+    }
+    .nav-link{
+        border: none;
     }
 /* ================================
 ==          HEADER START           ==
@@ -45,7 +53,7 @@
     }
 
     .try-btn{
-        background-color: #1ab69d;
+        background-color: var(--btn-color);
     }
     .navbar-toggler{
         border: none;
@@ -63,12 +71,23 @@
         background-blend-mode: screen, screen, lighten, overlay, lighten, difference, normal;
         padding-bottom: 100px;
     }
+    .header-content{
+        backdrop-filter: blur(17px) saturate(200%);
+        -webkit-backdrop-filter: blur(17px) saturate(200%);
+        background-color: #24581e2e;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #24581e73;
+
+        border-radius: 15px;
+        box-shadow:  5px 5px 10px #24581e2e,
+                    -5px -5px 10px #24581e73;
+    }
 
     .header-image{
         border-radius: 13px;
-        background: #e0e0e0;
-        box-shadow:  5px 5px 10px #dcdada,
-                    -5px -5px 10px #dcdada;
+        background: #e0e0e0c7;
+        box-shadow:  5px 5px 10px #dcdadad1,
+                    -5px -5px 10px #dcdadade;
                     overflow: hidden;
     }
     
@@ -86,36 +105,40 @@
     /* ================================
     ==       COUNTER AND ABOUT START ==
     ================================ */
-    /* =========COUNTER START================ */
     .counter-about{
         background: rgb(243,251,255);
         background: linear-gradient(135deg, rgba(243,251,255,1) 1%, rgba(231,248,255,1) 34%, rgba(255,245,234,1) 70%, rgba(255,255,255,1) 100%);
     }
-    .enroll{
-        color: #1ab69d;
-    }
-    .complite{
-        color: #ee4a62;
-    } 
-    .rate{
-        color: #8e56ff;
-    }
-    .ins{
-        color: #f8941f;
-    }
-    /* =========ABOUT-ADS START================ */
-    .about-ads{
-        margin-top: 100px;
-    }
-    .fa-check{
-        color: #f8b81f;
-        font-size: 20px;
-    }
-    .green-btn{
-        background-color: #1ab69d;
-    }
+  
     /* ================================
     ==       COUNTER AND ABOUT END ==
+    ================================ */
+    /* ================================
+    ==        ABOUT ADS START ==
+    ================================ */
+    .aboutAds {
+        margin: 0 auto;
+        background-color: #111927;
+        background-image: 
+            radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+            radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+    }
+
+    .ads-card-container {
+        backdrop-filter: blur(17px) saturate(200%);
+        -webkit-backdrop-filter: blur(17px) saturate(200%);
+        background-color: rgba(17, 25, 40, 0.74);
+        border-radius: 5px;
+    }
+    .fa-check{
+        color: #a5fd00;
+        font-size: 20px;
+    }
+        .green-btn{
+        background-color: var(--btn-color);
+    }
+    /* ================================
+    ==        ABOUT ADS END ==
     ================================ */
     /* ================================
     ==       POPULAR COURSE START ==
@@ -124,14 +147,14 @@
         position: absolute;
         left: 20px;
         top: 20px;
-        background-color: #1ab69d;
+        background-color: #231d20e0;
         color: white;
         font-size: 22px;
         font-weight: bold;
-        line-height: 80px;
-        width: 80px;
+        line-height: 70px;
+        width: 70px;
         text-align: center;
-        border-radius: 50%;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);        /* border-radius: 50%; */
     }
     .course-data{
         left: 0;
@@ -282,7 +305,8 @@
 ================================ */
     .register-section{
         padding: 45px;
-        background: linear-gradient(to right,#1AB79D,#27B98B);
+        background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%), linear-gradient(180deg, #6100FF 0%, #000000 100%), linear-gradient(235deg, #FFA3AC 0%, #FFA3AC 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%), linear-gradient(125deg, #FFA3AC 0%, #FFA3AC 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%);
+        background-blend-mode: soft-light, screen, darken, normal;
     }
 /* ================================
 ==     REGISTER SECTION END      ==
@@ -304,7 +328,8 @@
 ==  FOOTER SECTION STAR START    ==
 ================================ */
     footer{
-        background: linear-gradient(to bottom ,#F1F4F4,#F1F4F4 );
+        background: radial-gradient(100% 225% at 0% 0%, #DE3E3E 0%, #17115C 100%), radial-gradient(100% 225% at 100% 0%, #FF9040 0%, #FF0000 100%), linear-gradient(180deg, #CE63B7 0%, #ED6283 100%), radial-gradient(100% 120% at 75% 0%, #A74600 0%, #000000 100%), linear-gradient(310deg, #0063D8 0%, #16009A 50%);
+background-blend-mode: overlay, color-dodge, color-burn, color-dodge, normal;
     }
     .footer-ul li{
         line-height: 30px;
@@ -328,10 +353,19 @@
     .fa-youtube{
         color: #CC211F ;
     }
-
-    .copyright{
-        background-color: #EAEEF0;
+    .footer-content{
+        backdrop-filter: blur(17px) saturate(200%);
+        -webkit-backdrop-filter: blur(17px) saturate(200%);
+        background-color: rgba(17, 25, 40, 0.74);
+        border-radius: 5px;
     }
+    .copyright{
+        backdrop-filter: blur(17px) saturate(200%);
+        -webkit-backdrop-filter: blur(17px) saturate(200%);
+        background-color: rgba(4, 16, 37, 0.878);
+        border-radius: 5px;
+    }
+    
 /* ================================
 ==     FOOTER SECTION STAR END   ==
 ================================ */

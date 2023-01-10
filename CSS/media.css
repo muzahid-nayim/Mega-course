@@ -57,9 +57,19 @@
  }
 }
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 992px){
     .testimonial-area-11 .testimonial-slide .content{
         width: 100%;
+    }
+    .nav-item{
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+    .navbar-nav{
+        width: 90%;
+        margin: 0 auto;
     }
 
 }
