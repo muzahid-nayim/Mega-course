@@ -36,21 +36,17 @@
     }
 
 }
-
 /* ==      XL         == */
 @media screen and (min-width: 1200px) {
     .header-text{
         margin-top: 6rem;
     }
 }
-
-
 @media only screen and (max-width: 479px) {
 .testimonial-area-11 .testimonial-slide .content{
     padding: 40px 20px;
  }
 }
-
 @media only screen and (max-width: 992px){
     .testimonial-area-11 .testimonial-slide .content{
         width: 100%;
@@ -65,5 +61,4 @@
         width: 90%;
         margin: 0 auto;
     }
-
 }
